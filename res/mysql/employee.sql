@@ -1,4 +1,4 @@
-use river;
+use s2emp;
 drop table if exists employee;
 create table employee (
   empId int unsigned not null auto_increment,

@@ -32,8 +32,8 @@ public class EmployeeDAO implements IEmployeeDAO {
 
     public EmployeeDAO() {
         Properties props = new Properties();
-        try (FileInputStream fis = new FileInputStream("res/file/db.properties");) {
-            props.load(fis);
+        try {
+            props.load(new FileInputStream("res/file/db.properties"));
             this.fileName = props.getProperty("DB_FILENAME");
         } catch (FileNotFoundException e) {
             e.printStackTrace();

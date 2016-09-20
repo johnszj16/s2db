@@ -5,7 +5,8 @@ import java.util.Scanner;
 
 import cis2206.model.Employee;
 import cis2206.model.IEmployeeDAO;
-import cis2206.model.datastore.file.EmployeeDAO;
+//import cis2206.model.datastore.file.EmployeeDAO;
+import cis2206.model.datastore.mysql.EmployeeDAO;
 
 /**
  * EmployeeApp is the starting point for running this console-oriented
